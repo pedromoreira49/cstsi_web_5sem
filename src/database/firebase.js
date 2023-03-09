@@ -1,9 +1,8 @@
 import { initializeApp } from "firebase/app";
-import { getDatabase, set, ref } from 'firebase/database';
 
-import dotenv from "dotenv";
+import * as dotenv from "dotenv";
 
-dotenv.config()
+dotenv.config({path: '../../.env'})
 
 const firebaseConfig = {
     apiKey: process.env.APIKEY,
@@ -17,14 +16,29 @@ const firebaseConfig = {
 
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const db = getDatabase()
+export const app = initializeApp(firebaseConfig);
 
-let newUser = 2;
+/* let newUser = 1;
 let refNode = ref(db, `users${newUser}`);
 let newUserData = {
-    email: "pedromoreira@gmail.com",
-    username: "Pedro Moreira 2"
-}
+    email: "pedromoreira3@gmail.com",
+    username: "Pedro Moreira 3"
+} */
 
-set(refNode, newUserData)
+/* set(ref(db, 'users/'), {
+    email: 'teste@user.com',
+    username: 'tester'
+}).then(() => {
+    console.log('registro adicionado com sucesso!')
+    process.exit(0)
+}).catch(err => console.log("Erro: " + err)) */
+
+/* const refNode = ref(db, 'users2')
+const refAttr = child(refNode, 'username')
+
+set(refAttr, 'luis ricardo').then(() => {
+    console.log('sucesso!')
+    process.exit(0)
+}).catch(err => console.log("Error: " + err)) */
+
+/* set(refNode, newUserData) */
