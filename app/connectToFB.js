@@ -2,10 +2,11 @@ import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 import { readFile } from 'fs'
 
+
 export function dbConnect() {
     return new Promise((resolve, reject)=>{
         try {
-            readFile("../config/configDB.json", (err, data) => {
+            readFile("config/config.json", (err, data) => {
                 if (err) throw Error('Arquivo de configuração não encontrado!!')
                 let firebaseConfig = JSON.parse(data)
                 if (typeof firebaseConfig!=='undefined'&& firebaseConfig) {
@@ -22,3 +23,4 @@ export function dbConnect() {
         }
     })
 }
+
