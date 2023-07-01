@@ -1,0 +1,27 @@
+{
+  "name": "exercicio08",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "add": "node src/addProd.js",
+    "addProds": "node src/addProducts.js",
+    "select1": "node src/task3-1.js",
+    "select2": "node src/task3-2.js",
+    "select3": "node src/task3-3.js",
+    "select4": "node src/task3-4.js",
+    "select5": "node src/task3-5.js",
+    "select6": "node src/task3-6.js",
+    "select7": "node src/task3-7.js",
+    "select8": "node src/task3-8.js",
+    "desconto": "node src/task4.js"
+  },
+  "description": "exercicio para banco de dados avançado",
+  "main": "src/app.js",
+  "author": "Pedro Moreira",
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "^5.6.0",
+    "prompt-sync": "^4.2.0"
+  }
+}
