@@ -1,0 +1,12 @@
+{
+  "name": "exercicio09",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "exericico 09 para banco de dados avançado",
+  "main": "src/app.js",
+  "author": "Pedro Moreira",
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "^5.6.0"
+  }
+}
