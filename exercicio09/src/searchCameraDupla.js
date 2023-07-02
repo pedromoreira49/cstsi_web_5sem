@@ -5,7 +5,7 @@ const searchGamer = async () => {
         const db = await connect();
         const result = await db.find({
             $text: {
-                $search: 'Camera Dupla'
+                $search: "'Camera Dupla'"
             }
         }, {
             sort: { preco: -1},
